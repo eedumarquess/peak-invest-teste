@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "back-peak", "back-peak\back-peak.csproj", "{0A4939B3-2DE6-4A9B-871E-C1D62CC405EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A4939B3-2DE6-4A9B-871E-C1D62CC405EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4939B3-2DE6-4A9B-871E-C1D62CC405EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4939B3-2DE6-4A9B-871E-C1D62CC405EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4939B3-2DE6-4A9B-871E-C1D62CC405EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FF6D149-C318-4DD2-BA3D-8055B16302FF}
+	EndGlobalSection
+EndGlobal
