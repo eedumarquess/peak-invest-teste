@@ -1,8 +1,11 @@
 ﻿
+using Microsoft.AspNetCore.Mvc;
+
 namespace back_peak.Controllers
 
 {
-	public static class RegisterController
+    [Produces("application/json")]
+    public static class RegisterController
 	{
 		public static string Register(int id)
 		{
@@ -13,7 +16,9 @@ namespace back_peak.Controllers
                 new KeyValuePair<int, string>(3, "Ana")
             };
 
-            return list.First(c => c.Key == id).Value;
+            var result = list.First(c => c.Key == id).Value;
+
+            return result;
 		}
 	}
 }
