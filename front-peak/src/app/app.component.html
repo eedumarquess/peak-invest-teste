@@ -1,0 +1,48 @@
+<div class="p-12 w-full flex flex-col items-center">
+  <div class="w-96 m-2 bg-white p-4 rounded-lg border-2 border-solid border-bluePeak">
+    <p class="text-center">
+      Calculo Total de Parcelas
+    </p>
+
+    <form class="flex flex-col">
+      <label class="mx-2">Valor Inicial</label>
+      <input type="number" #inputValue class="p-2 mx-2 rounded-lg border-2 border-solid border-bluePeak">
+
+      <label class="mx-2">Parcelas</label>
+      <input type="number" #inputParcels class="p-2 mx-2 rounded-lg border-2 border-solid border-bluePeak">
+    </form>
+
+    <div class="flex justify-center p-4">
+      <button 
+      (click)="sendValues(inputValue, inputParcels)"
+      class="bg-bluePeak text-white py-2 px-4 rounded-lg" type="submit">Enviar</button>
+    </div>
+
+    <div class="flex flex-row justify-center">
+      <p class="px-2">Valor <br/> Final</p>
+      <div class="bg-white w-48 m-auto text-center" [innerHTML]="resultCalculus"></div>
+    </div>
+  </div>
+
+  <div class="flex flex-col w-96 m-2 bg-white p-4 rounded-lg border-2 border-solid border-bluePeak">
+    <p class="text-center">
+      Tela de Consulta
+    </p>
+    
+    <form class="flex flex-col justify-around p-4">
+      <label class="mx-2">ID - Pessoa</label>
+      <input type="number" #inputID class="p-2 mx-2 rounded-lg border-2 border-solid border-bluePeak">
+    </form>
+
+    <div class="flex justify-center">
+      <button 
+      (click)="sendID(inputID)"
+      class="bg-bluePeak text-white py-2 px-4 rounded-lg" type="submit">Enviar</button>
+    </div>
+
+    <div class="flex flex-row justify-center">
+      <p class="p-2 text-center">ID <br/> Retornada</p>
+      <div class="bg-white w-48 m-auto text-center" [innerHTML]="resultConsult"></div>
+    </div>
+  </div>
+</div>
